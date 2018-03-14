@@ -19,6 +19,8 @@ import { LinksComponent } from './links/links.component';
 import { BoardComponent } from './board/board.component';
 import { MobileComponent } from './mobile/mobile.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { IncidentsComponent } from './situation/incidents/incidents.component';
+import { IncidentComponent } from './situation/incidents/incident/incident.component';
 
 
 @NgModule({
@@ -38,7 +40,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     FullScreenComponent,
     LinksComponent,
     BoardComponent,
-    MobileComponent
+    MobileComponent,
+    IncidentsComponent,
+    IncidentComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,35 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>
+        <div class="row">
+          <label class="col-sm-3">Email</label>
+          <select class="col-sm-3">
+            <option>Change display</option>
+            <option>Current situation</option>
+            <option>Incidents closed today</option>
+            <option>Incidents closed this week</option>
+            <option>Incidents closed last week</option>
+            <option>Incidents closed yesterday+</option>
+            <option>Incidents closed last week+</option>
+            <option>Incidents closed this month</option>
+            <option>Incidents closed last month</option>
+            <option>Incidents closed this year</option>
+            <option>Incidents closed last year</option>
+            <option>Incidents Scheduled</option>
+          </select>
+          <input class="col-sm-1 col-lg-1" type="image" src="assets\refresh-buttun.png">
+        </div>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let incident of incidents">
+          <td>{{incident.fname}}</td>
+          <td>{{incident.lname}}</td>
+          <td>{{incident.email}}</td>
+      </tr>
+  </tbody>
+</table>
