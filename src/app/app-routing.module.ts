@@ -1,7 +1,5 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
+import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { SituationComponent } from './situation/situation.component';
@@ -20,31 +18,30 @@ import { BoardComponent } from './board/board.component';
 import { MobileComponent } from './mobile/mobile.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
+const appRoutes: Routes = [
+  {path: '', component: SituationComponent },
+  {path: 'new', component: NewComponent},
+  {path: 'units', component: UnitsComponent},
+  {path: 'facilities', component: FacilitiesComponent},
+  {path: 'search', component: SearchComponent},
+  {path: 'reports', component: ReportsComponent},
+  {path: 'configurtion', component: ConfigurationComponent},
+  {path: 'chat', component: ChatComponent},
+  {path: 'log', component: LogComponent},
+  {path: 'road-conditions', component: RoadConditionsComponent},
+  {path: 'full-screen', component: FullScreenComponent},
+  {path: 'links', component: LinksComponent},
+  {path: 'board', component: BoardComponent},
+  {path: 'mobile', component: MobileComponent},
+  {path: 'not-found', component: PageNotFoundComponent},
+  {path: '**', redirectTo: '/not-found'}
+];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SituationComponent,
-    NewComponent,
-    UnitsComponent,
-    PageNotFoundComponent,
-    FacilitiesComponent,
-    SearchComponent,
-    ReportsComponent,
-    ConfigurationComponent,
-    ChatComponent,
-    LogComponent,
-    RoadConditionsComponent,
-    FullScreenComponent,
-    LinksComponent,
-    BoardComponent,
-    MobileComponent
-  ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  exports: [RouterModule]
 })
-export class AppModule { }
+
+export class AppRoutingModule { }
