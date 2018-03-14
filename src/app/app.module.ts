@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
-// import { AgmCoreModule } from '@agm/core';
+import { AgmCoreModule } from '@agm/core';
 
 import { AppComponent } from './app.component';
 import { SituationComponent } from './situation/situation.component';
@@ -52,9 +52,9 @@ import { MapsComponent } from './situation/maps/maps.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    // AgmCoreModule.forRoot({
-    //   apiKey: 'AIzaSyAB8RSikRLvN-EUlfgN6dCWZ23foJfwGLk'
-    // })
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAB8RSikRLvN-EUlfgN6dCWZ23foJfwGLk'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
