@@ -6,54 +6,56 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarColor01">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/']">Situation</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/new']">New</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/units']">Units</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/facilities']">Fac's</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/search']">Search</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/reports']">Reports</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/configurtion']">Config</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/chat']">Chat</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/log']">Log</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/road-conditions']">Road Cond</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/full-screen']">Full Scr</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/links']">Links</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/board']">Board</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/mobile']">Moblie</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Logout</button>
-        </form>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/']">Situation</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/new']">New</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/units']">Units</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/facilities']">Fac's</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/search']">Search</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/reports']">Reports</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/configurtion']">Config</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/chat']">Chat</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/log']">Log</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/road-conditions']">Road Cond</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/full-screen']">Full Scr</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/links']">Links</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/board']">Board</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/mobile']">Moblie</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Logout</button>
+    </form>
   </div>
 </nav>
 
-<router-outlet></router-outlet>
+<div>
+  <router-outlet></router-outlet>
+</div>
