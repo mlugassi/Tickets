@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
+// import { AgmCoreModule } from '@agm/core';
 
 import { AppComponent } from './app.component';
 import { SituationComponent } from './situation/situation.component';
@@ -22,6 +24,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { IncidentsComponent } from './situation/incidents/incidents.component';
 import { IncidentComponent } from './situation/incidents/incident/incident.component';
 
+import { MapsComponent } from './situation/maps/maps.component';
+
+
 
 @NgModule({
   declarations: [
@@ -41,12 +46,15 @@ import { IncidentComponent } from './situation/incidents/incident/incident.compo
     LinksComponent,
     BoardComponent,
     MobileComponent,
-    IncidentsComponent,
-    IncidentComponent
+    MapsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    // AgmCoreModule.forRoot({
+    //   apiKey: 'AIzaSyAB8RSikRLvN-EUlfgN6dCWZ23foJfwGLk'
+    // })
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -17,6 +17,7 @@ import { LinksComponent } from './links/links.component';
 import { BoardComponent } from './board/board.component';
 import { MobileComponent } from './mobile/mobile.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { MapsComponent} from './situation/maps/maps.component';
 
 const appRoutes: Routes = [
   {path: '', component: SituationComponent },
@@ -33,6 +34,7 @@ const appRoutes: Routes = [
   {path: 'links', component: LinksComponent},
   {path: 'board', component: BoardComponent},
   {path: 'mobile', component: MobileComponent},
+  {path: 'maps', component: MapsComponent},
   {path: 'not-found', component: PageNotFoundComponent},
   {path: '**', redirectTo: '/not-found'}
 ];
