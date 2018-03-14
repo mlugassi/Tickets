@@ -1,20 +1,59 @@
-<nav>
-  <ul class="nav">
-    <li><a [routerLink]="['/']">Situation</a></li>
-    <li><a [routerLink]="['/new']">New</a></li>
-    <li><a [routerLink]="['/units']">Units</a></li>
-    <li><a [routerLink]="['/facilities']">Fac's</a></li>
-    <li><a [routerLink]="['/search']">Search</a></li>
-    <li><a [routerLink]="['/reports']">Reports</a></li>
-    <li><a [routerLink]="['/configurtion']">Config</a></li>
-    <li><a [routerLink]="['/chat']">Chat</a></li>
-    <li><a [routerLink]="['/log']">Log</a></li>
-    <li><a [routerLink]="['/road-conditions']">Road Cond</a></li>
-    <li><a [routerLink]="['/full-screen']">Full Scr</a></li>
-    <li><a [routerLink]="['/links']">Links</a></li>
-    <li><a [routerLink]="['/board']">Board</a></li>
-    <li><a [routerLink]="['/mobile']">Moblie</a></li>
-  </ul>
-  </nav>
-  
-  <router-outlet></router-outlet>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">Tickets</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
+    aria-expanded="false" aria-label="Toggle navigation" style="">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/']">Situation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/new']">New</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/units']">Units</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/facilities']">Fac's</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/search']">Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/reports']">Reports</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/configurtion']">Config</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/chat']">Chat</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/log']">Log</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/road-conditions']">Road Cond</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/full-screen']">Full Scr</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/links']">Links</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/board']">Board</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/mobile']">Moblie</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Logout</button>
+        </form>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
