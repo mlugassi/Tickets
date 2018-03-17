@@ -21,11 +21,7 @@ import { LinksComponent } from './links/links.component';
 import { BoardComponent } from './board/board.component';
 import { MobileComponent } from './mobile/mobile.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { IncidentsComponent } from './situation/incidents/incidents.component';
-import { IncidentComponent } from './situation/incidents/incident/incident.component';
-
 import { MapsComponent } from './situation/maps/maps.component';
-
 
 
 @NgModule({
