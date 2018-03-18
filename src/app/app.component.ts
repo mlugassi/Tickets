@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ElementSchemaRegistry } from '@angular/compiler';
+import { NgStyle } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,7 @@ export class AppComponent {
   style_css = "navbar navbar-expand-lg navbar-dark bg-primary";
   style_day = "navbar navbar-expand-lg navbar-dark bg-primary";
   style_night = "navbar navbar-expand-lg navbar-dark bg-dark";
+  Style_radio= {"color":"white"};
   check = true;
   onSelectionChange() {
     this.check = !this.check;
