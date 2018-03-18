@@ -4,6 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AgmCoreModule } from '@agm/core';
+import { HttpModule } from '@angular/http';
+
+import { MapsService } from './situation/maps/maps.service';
 
 import { AppComponent } from './app.component';
 import { SituationComponent } from './situation/situation.component';
@@ -48,11 +51,12 @@ import { MapsComponent } from './situation/maps/maps.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAB8RSikRLvN-EUlfgN6dCWZ23foJfwGLk'
     })
   ],
-  providers: [],
+  providers: [MapsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
