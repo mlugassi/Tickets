@@ -6,7 +6,7 @@
   <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
 </agm-map>
 <label style="color:rgb(165, 197, 247)">Enter the location: </label>
-<input type="text" [value]="location">
+<input type="text" [(ngModel)]="location">
 <input type="submit" (click)="searchLocation()">
 
 
