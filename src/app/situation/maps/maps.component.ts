@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Response } from '@angular/http';
 import { MapsService } from './maps.service';
-import { stat } from 'fs';
 
 @Component({
   selector: 'app-maps',
