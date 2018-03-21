@@ -1,33 +1,75 @@
-<p>
-  incidents works!
-</p>
-<div style="height: 50px; width: 300px">
-  <table class="table table-hover table-sm" style="margin: 10px">
-    <thead>
-      <tr>
-        <th colspan="2" class="text-center">incidents</th>
-        <th>
-          <select>
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
-          </select>
-          <button>text</button>
-        </th>
-      </tr>
-      <tr>
-        <th>id</th>
-        <th>date</th>
-        <th>price</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let incident of incidents">
-        <td>{{incident.id}}</td>
-        <td>{{incident.date}}</td>
-        <td>{{incident.price}}</td>
-      </tr>
-    </tbody>
-  </table>
+<!--Top Table UI-->
+
+<div class="card card-cascade narrower">
+
+  <!--Card image-->
+  <div class="view gradient-card-header blue-gradient narrower py-2 mx-4 mb-3 d-flex justify-content-between align-items-center">
+
+    <!-- select -->
+    <div class="col-lg-3 col-md-12">
+      <select class="mdb-select colorful-select dropdown-primary mx-2">
+        <option *ngFor="let option of options" value="{{option}}">{{option}}</option>
+      </select>
+    </div>
+
+    <!-- title -->
+    <a href="" class="white-text mx-3">incidents</a>
+
+    <!-- buttons -->
+      <button type="button" style="background: url(/assets/minimize.png)" class="btn btn-outline-white btn-rounded btn-sm px-2">
+      </button>
+
+  </div>
+  <!--/Card image-->
+
+  <div class="px-4">
+
+    <div class="table-wrapper">
+      <!--Table-->
+      <table class="table table-hover mb-0">
+
+        <!--Table head-->
+        <thead>
+          <tr>
+            <th>
+              <input type="checkbox" id="checkbox">
+              <label for="checkbox" class="mr-2 label-table"></label>
+            </th>
+            <th class="th-lg">
+              <a>ID
+                <i class="fa fa-sort ml-1"></i>
+              </a>
+            </th>
+            <th class="th-lg">
+              <a href="">Date
+                <i class="fa fa-sort ml-1"></i>
+              </a>
+            </th>
+            <th class="th-lg">
+              <a href="">Price
+                <i class="fa fa-sort ml-1"></i>
+              </a>
+            </th>
+          </tr>
+        </thead>
+        <!--Table head-->
+
+        <!--Table body-->
+        <tbody>
+          <tr *ngFor="let incident of incidents">
+            <th scope="row">
+              <input type="checkbox" id="checkbox1">
+              <label for="checkbox1" class="label-table"></label>
+            </th>
+            <td>{{incident.id}}</td>
+            <td>{{incident.date}}</td>
+            <td>{{incident.price}}</td>
+          </tr>
+        </tbody>
+        <!--Table body-->
+      </table>
+      <!--Table-->
+    </div>
+
+  </div>
 </div>
