@@ -12,11 +12,10 @@ export class MapsComponent {
   title: string = 'AGM project';
   lat: number = 51.678418;
   lng: number = 7.809007;
-  location = "Israel";
+  location = "";
   constructor(private mapsService: MapsService) { }
 
   searchLocation() {
-    //this.location=
     this.mapsService.getLatAndLong(this.location)
       .subscribe(
         (response: Response) => {
@@ -37,8 +36,9 @@ export class MapsComponent {
               this.lng = lng;
             }
           }
-          else
+          else{
           alert("The Status isn't OK!! \n" + status);
+          }
         },
         (error) => console.log(error)
       );
