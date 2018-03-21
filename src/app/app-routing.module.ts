@@ -17,7 +17,7 @@ import { LinksComponent } from './links/links.component';
 import { BoardComponent } from './board/board.component';
 import { MobileComponent } from './mobile/mobile.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { MapsComponent} from './situation/maps/maps.component';
+import { MapsComponent} from './maps/maps.component';
 
 const appRoutes: Routes = [
   {path: '', component: SituationComponent },

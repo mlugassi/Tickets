@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AgmCoreModule } from '@agm/core';
 import { HttpModule } from '@angular/http';
 
-import { MapsService } from './situation/maps/maps.service';
+import { MapsService } from './maps/maps.service';
 
 import { AppComponent } from './app.component';
 import { SituationComponent } from './situation/situation.component';
@@ -24,7 +24,7 @@ import { LinksComponent } from './links/links.component';
 import { BoardComponent } from './board/board.component';
 import { MobileComponent } from './mobile/mobile.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { MapsComponent } from './situation/maps/maps.component';
+import { MapsComponent } from './maps/maps.component';
 import { IncidentsComponent } from './situation/incidents/incidents.component';
 
 
