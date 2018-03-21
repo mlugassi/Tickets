@@ -25,6 +25,7 @@ import { BoardComponent } from './board/board.component';
 import { MobileComponent } from './mobile/mobile.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { MapsComponent } from './situation/maps/maps.component';
+import { IncidentsComponent } from './situation/incidents/incidents.component';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { MapsComponent } from './situation/maps/maps.component';
     LinksComponent,
     BoardComponent,
     MobileComponent,
-    MapsComponent
+    MapsComponent,
+    IncidentsComponent
   ],
   imports: [
     BrowserModule,
